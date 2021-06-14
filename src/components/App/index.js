@@ -1,10 +1,11 @@
 import React from 'react';
 import './style.css';
 
-import GridBoard from '../GridBoard/index'
-import NextBlock from '../NextBlock/index'
-import ScoreBoard from '../ScoreBoard/index'
-import Controls from '../Controls/index'
+import GridBoard from '../GridBoard'
+import NextBlock from '../NextBlock'
+import ScoreBoard from '../ScoreBoard'
+import Controls from '../Controls'
+import MessagePopup from '../MessagePopup';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <GridBoard></GridBoard>
       <ScoreBoard></ScoreBoard>
       <Controls></Controls>
+      <MessagePopup></MessagePopup>
     </div>
   );
 }
