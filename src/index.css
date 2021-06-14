@@ -77,3 +77,7 @@ code {
 .color-7 {
   background-color: var(--color-7);
 }
+
+* {
+  box-sizing: border-box;
+}
