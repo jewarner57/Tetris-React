@@ -16,7 +16,7 @@ import MessagePopup from '../MessagePopup';
 const store = createStore(reducers)
 
 function App() {
-  const [play] = useSound(tetrisTheme, { volume: 0.25 });
+  const [play] = useSound(tetrisTheme, { volume: 0.15 });
 
   useEffect(() => {
     play()
