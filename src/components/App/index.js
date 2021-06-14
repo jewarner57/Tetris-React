@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducers from '../../reducers'
+import useSound from 'use-sound';
+import tetrisTheme from '../../tetrisTheme.mp3';
 
 import './style.css';
 
@@ -14,6 +16,12 @@ import MessagePopup from '../MessagePopup';
 const store = createStore(reducers)
 
 function App() {
+  const [play] = useSound(tetrisTheme, { volume: 0.25 });
+
+  useEffect(() => {
+    play()
+  }, [play])
+
   return (
     <Provider store={store}>
       <div className="App">
