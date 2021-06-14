@@ -3,7 +3,7 @@ import './style.css';
 
 import GridBoard from '../GridBoard/index'
 import NextBlock from '../NextBlock/index'
-
+import ScoreBoard from '../ScoreBoard/index'
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       </header>
       <NextBlock></NextBlock>
       <GridBoard></GridBoard>
+      <ScoreBoard></ScoreBoard>
     </div>
   );
 }
