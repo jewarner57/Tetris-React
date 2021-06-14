@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import GridSquare from '../GridSquare/index'
 import { shapes } from '../../utils'
 import { useSelector, useDispatch } from 'react-redux'
-import { moveDown } from '../actions'
+import { moveDown } from '../../actions'
 
 import './style.css'
 
