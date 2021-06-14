@@ -4,6 +4,7 @@ import './style.css';
 import GridBoard from '../GridBoard/index'
 import NextBlock from '../NextBlock/index'
 import ScoreBoard from '../ScoreBoard/index'
+import Controls from '../Controls/index'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NextBlock></NextBlock>
       <GridBoard></GridBoard>
       <ScoreBoard></ScoreBoard>
+      <Controls></Controls>
     </div>
   );
 }
